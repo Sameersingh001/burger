@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerLobby</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            .animate-pulse {
+                animation: none;
+                position: relative !important;
+                left: auto !important;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-yellow-400 dark:bg-slate-800 ">
+
+    <div class="container mx-auto px-4">
+        <!-- Navigation -->
+        <nav class="h-20 flex flex-col md:flex-row justify-between items-center py-4">
+            <div class="logo mb-4 md:mb-0">
+                <h1 class="text-3xl md:text-4xl font-bold text-white">BurgerLobby</h1>
+            </div>
+            
+            <div class="link flex flex-wrap justify-center gap-2 md:gap-0">
+                <a href="#" class="text-white font-bold text-lg md:text-xl px-3 md:px-5 hover:text-orange-700">MENU</a>
+                <a href="#" class="text-white font-bold text-lg md:text-xl px-3 md:px-5 hover:text-orange-700">DELIVERY</a>
+                <a href="#" class="text-white font-bold text-lg md:text-xl px-3 md:px-5 hover:text-orange-700">SUPPORT</a>
+                <a href="#" class="text-white font-bold text-lg md:text-xl px-3 md:px-5 hover:text-orange-700">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center py-8 md:py-16">
+            <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left mt-8 md:mt-0">
+                <h1 class="font-bold text-5xl md:text-8xl text-white hover:text-orange-400 z-1">
+                    Burger <span class="text-yellow-800">Lobby</span>
+                </h1>
+                <img src="https://png.pngtree.com/png-clipart/20240610/original/pngtree-fast-food-big-burger-png-image_15295528.png" 
+                     class="h-40 w-40 mx-auto md:mx-0 md:absolute md:left-20 md:top-20 animate-pulse my-4" 
+                     alt="Burger">
+                <h2 class="text-red-400 font-bold text-2xl md:text-4xl mt-4">About Us</h2>
+                <h3 class="text-white text-xl md:text-2xl font-bold mt-2">
+                    Have an amazing Experience With our services
+                </h3>
+            </div>
+            <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b2d83623708887.563278d02db8c.gif" 
+                     class="h-64 md:h-96 w-auto" 
+                     alt="Animated Burger">
+            </div>
+        </div>
+
+        <!-- Food Items Section -->
+        <h1 class="text-white text-3xl md:text-4xl font-bold my-8 md:my-16 text-center md:text-left">Food Items:</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl shadow-xl shadow-orange-500/50 flex flex-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFWiT4cgx1cKhAMQbSo-M560WkS3LAMDM0A&s" 
+                     alt="Burger" 
+                     class="h-48 w-full object-cover rounded-t-3xl">
+                <div class="p-4 flex-grow">
+                    <h1 class="font-bold text-lg">BURGER MANIA</h1>
+                    <p class="text-sm mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum fuga mollitia explicabo.</p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-green-400 h-10 w-full rounded-full font-bold hover:bg-green-500 transition">
+                        Order
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-3xl shadow-xl shadow-orange-500/50 flex flex-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKBaiVkYqfmOAnUGs0AwxwAdJYwlYDmIQ0w&s" 
+                     alt="Burger" 
+                     class="h-48 w-full object-cover rounded-t-3xl">
+                <div class="p-4 flex-grow">
+                    <h1 class="font-bold text-lg">BURGER MANIA</h1>
+                    <p class="text-sm mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum fuga mollitia explicabo.</p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-green-400 h-10 w-full rounded-full font-bold hover:bg-green-500 transition">
+                        Order
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-3xl shadow-xl shadow-orange-500/50 flex flex-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJA38gI9JKzzXsj-zb8ruj7FnZPf8EAK1OwdLtpqY9X6zqHLJOXcM1BasxXQf-UAL7PA&usqp=CAU" 
+                     alt="Burger" 
+                     class="h-48 w-full object-cover rounded-t-3xl">
+                <div class="p-4 flex-grow">
+                    <h1 class="font-bold text-lg">BURGER MANIA</h1>
+                    <p class="text-sm mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum fuga mollitia explicabo.</p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-green-400 h-10 w-full rounded-full font-bold hover:bg-green-500 transition">
+                        Order
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-3xl shadow-xl shadow-orange-500/50 flex flex-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFWiT4cgx1cKhAMQbSo-M560WkS3LAMDM0A&s" 
+                     alt="Burger" 
+                     class="h-48 w-full object-cover rounded-t-3xl">
+                <div class="p-4 flex-grow">
+                    <h1 class="font-bold text-lg">BURGER MANIA</h1>
+                    <p class="text-sm mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum fuga mollitia explicabo.</p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-green-400 h-10 w-full rounded-full font-bold hover:bg-green-500 transition">
+                        Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
